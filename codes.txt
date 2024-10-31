@@ -1,0 +1,56 @@
+int main(){
+	char a = 4;
+	printf("%d", a);
+	return 0;
+}
+
+int main(){ 	int a; 	while(1) { 	 ... by Selva Murugan C/LGSIA TV Advance Solution(selva.muruganc@lge.com)
+Selva Murugan C/LGSIA TV Advance Solution(selva.muruganc@lge.com)
+14:08
+int main(){
+	int a;
+	while(1) {
+		if(0 == a) {
+			printf("Hai");
+		}
+		else {
+			printf("Hello");
+		}
+	}
+	return 0;
+}
+
+Hai by Sasidhar Marripati
+14:09
+Sasidhar Marripati
+Hai
+int main(){ 	char str[32] = {0}; 	str... by Selva Murugan C/LGSIA TV Advance Solution(selva.muruganc@lge.com)
+Selva Murugan C/LGSIA TV Advance Solution(selva.muruganc@lge.com)
+14:09
+int main(){
+	char str[32] = {0};
+	str = "Hai";
+	printf("%s", str);
+	return 0;
+}
+
+int main(){ 	char str[32] = {0}; 	str... by Selva Murugan C/LGSIA TV Advance Solution(selva.muruganc@lge.com)
+Selva Murugan C/LGSIA TV Advance Solution(selva.muruganc@lge.com)
+14:11
+int main(){
+	char str[32] = {0};
+	strcpy(str, "Hai");
+	printf("%s", str);
+	return 0;
+}
+int main(){ 	char *str = NULL; 	strcp... by Selva Murugan C/LGSIA TV Advance Solution(selva.muruganc@lge.com)
+Selva Murugan C/LGSIA TV Advance Solution(selva.muruganc@lge.com)
+14:13
+int main(){
+	char *str = NULL;
+	strcpy(str, "Hai");
+	printf("%s", str);	
+	return 0;
+}
+
+has context menu
