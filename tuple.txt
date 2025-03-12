@@ -1,0 +1,30 @@
+tpl=(20,330,20,50,"rrf")
+tpl1=(330,)
+print(type(tpl1))
+print(tpl*2)
+print(tpl.count(20))
+print(tpl.index('rrf'))
+print(tpl[0:2])
+print(tpl1)
+print(type(tpl1))
+print(tpl[0:3])  #slicing in tuple
+print(tpl[::-1])
+
+#list to tuple
+
+lst=[45,19,21,18,16,23]
+print(lst)
+print(type(lst))
+tpl2=tuple(lst)
+print(tpl2)
+print(type(tpl2))
+
+#tuple to list
+
+tpl3=(5,9,4,13,45)
+print(tpl3)
+print(type(tpl3))
+lst1=list[tpl3]
+print(lst1)
+print(type(lst1))
+

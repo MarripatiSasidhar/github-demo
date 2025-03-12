@@ -1,0 +1,25 @@
+#list
+lst=[100,20,"Sasi",-1100,21,21]
+print(lst)
+print(lst[0])
+print(lst[0:2]) #slicing in list
+print(lst*2)
+print(len(lst))
+lst.append("amma")
+lst.remove(-1100)
+lst1=[10,20,30,-40,-3.5]
+print(lst1)
+del(lst[1])
+print(lst)
+print(lst.count(100))
+print(max(lst1))
+print(min(lst1))
+lst1.insert(3,21)
+print(lst1)
+lst1.sort(reverse=False)
+print(lst1)
+lst.clear()
+print(lst)
+
+
+
