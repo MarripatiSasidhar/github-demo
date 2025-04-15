@@ -1,0 +1,266 @@
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git switch main
+D       1.doc
+D       2.txt
+D       List.txt
+D       new1.doc
+D       sample.txt
+D       sample1.txt
+D       sample2.txt
+D       start.doc
+D       testingfile.txt
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 11 and 4 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git pull origin main
+From https://github.com/MarripatiSasidhar/github-demo
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git merge main
+Already up to date.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git push origin main
+To https://github.com/MarripatiSasidhar/github-demo.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/MarripatiSasidhar/github-demo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git push origin main
+To https://github.com/MarripatiSasidhar/github-demo.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/MarripatiSasidhar/github-demo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 11 and 4 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    1.doc
+        deleted:    2.txt
+        deleted:    List.txt
+        deleted:    new1.doc
+        deleted:    sample.txt
+        deleted:    sample1.txt
+        deleted:    sample2.txt
+        deleted:    start.doc
+        deleted:    testingfile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        All git commads practice.txt
+        git learn-1.txt
+        git learn.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git add All git
+1.doc                         All git commads practice.txt  git learn-1.txt               new1.doc                      sample1.txt                   start.doc
+2.txt                         List.txt                      git learn.txt                 sample.txt                    sample2.txt                   testingfile.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git add All git commands practice.txt git learn-1 git learn.txt
+fatal: pathspec 'All' did not match any files
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git add All git commands practice.txt
+fatal: pathspec 'All' did not match any files
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git add .
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 11 and 4 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    1.doc
+        deleted:    2.txt
+        new file:   All git commads practice.txt
+        deleted:    List.txt
+        new file:   git learn-1.txt
+        new file:   git learn.txt
+        deleted:    new1.doc
+        deleted:    sample.txt
+        deleted:    sample1.txt
+        deleted:    sample2.txt
+        deleted:    start.doc
+        deleted:    testingfile.txt
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git commit -m "new git files added"
+[main a7afde0] new git files added
+ 12 files changed, 3307 insertions(+), 34 deletions(-)
+ delete mode 100644 1.doc
+ delete mode 100644 2.txt
+ create mode 100644 All git commads practice.txt
+ delete mode 100644 List.txt
+ create mode 100644 git learn-1.txt
+ create mode 100644 git learn.txt
+ delete mode 100644 new1.doc
+ delete mode 100644 sample.txt
+ delete mode 100644 sample1.txt
+ delete mode 100644 sample2.txt
+ delete mode 100644 start.doc
+ delete mode 100644 testingfile.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git push origin main
+To https://github.com/MarripatiSasidhar/github-demo.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/MarripatiSasidhar/github-demo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git pull
+fatal: refusing to merge unrelated histories
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git pull origin main
+From https://github.com/MarripatiSasidhar/github-demo
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git push --force origin main
+Enumerating objects: 40, done.
+Counting objects: 100% (40/40), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (32/32), done.
+Writing objects: 100% (39/39), 450.40 KiB | 8.34 MiB/s, done.
+Total 39 (delta 9), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (9/9), done.
+To https://github.com/MarripatiSasidhar/github-demo.git
+ + bae6d3f...a7afde0 main -> main (forced update)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ ls
+'All git commads practice.txt'   README.md   codes.txt  'git learn-1.txt'  'git learn.txt'   github-demo/   humidity.CHANGE.pptx   string.txt   tuple.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ rmdir git
+git learn-1.txt  git learn.txt    github-demo/
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ rmdir github-demo/
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ ls
+'All git commads practice.txt'   README.md   codes.txt  'git learn-1.txt'  'git learn.txt'   humidity.CHANGE.pptx   string.txt   tuple.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    github-demo
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git commit -m "deleted github-demo"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    github-demo
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git rmdir github-demo
+git: 'rmdir' is not a git command. See 'git --help'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ rm -r github-demo
+rm: cannot remove 'github-demo': No such file or directory
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git add github-demo
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    github-demo
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git commit -m "deleted github-demo successfully"
+[main 1826445] deleted github-demo successfully
+ 1 file changed, 1 deletion(-)
+ delete mode 160000 github-demo
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git push origin --delete main
+To https://github.com/MarripatiSasidhar/github-demo.git
+ ! [remote rejected] main (refusing to delete the current branch: refs/heads/main)
+error: failed to push some refs to 'https://github.com/MarripatiSasidhar/github-demo.git'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git merge main
+Already up to date.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 249 bytes | 249.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MarripatiSasidhar/github-demo.git
+   a7afde0..1826445  main -> main
