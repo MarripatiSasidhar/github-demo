@@ -1,0 +1,975 @@
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT ((8624d27...))
+$ git checkout main
+github-demo: needs merge
+error: you need to resolve your current index first
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT ((8624d27...))
+$ git checkout -b marripati
+Switched to a new branch 'marripati'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ git checkout main
+github-demo: needs merge
+error: you need to resolve your current index first
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ ^C
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ <<<<<<< HEAD
+your changes here
+=======
+incoming changes from merge
+>>>>>>> some-commit-hash
+bash: syntax error near unexpected token `<<<'
+bash: your: command not found
+bash: =======: command not found
+bash: incoming: command not found
+bash: syntax error near unexpected token `>>'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ >>>>>>> some-commit-hash
+bash: syntax error near unexpected token `>>'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ >> some-commit-hash
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ git checkout main
+github-demo: needs merge
+error: you need to resolve your current index first
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ << HEAD
+> your changes here
+> exit
+> ^C
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ git switch abhi
+github-demo: needs merge
+error: you need to resolve your current index first
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ ^C
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ git add .
+error: 'github-demo' does not have a commit checked out
+fatal: updating files failed
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ git switch main
+github-demo: needs merge
+error: you need to resolve your current index first
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ git status
+On branch marripati
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Python
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both added:      github-demo
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        some-commit-hash
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ ^C
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ cat some-commit-hash
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ git add github-demo
+error: 'github-demo' does not have a commit checked out
+fatal: updating files failed
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ ^C
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ git rm --cached github-demo
+rm 'github-demo'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ rm -rf github-demo
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ git commit -m "Remove broken submodule github-demo"
+[marripati 1a69dac] Remove broken submodule github-demo
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 160000 Python
+ delete mode 160000 github-demo
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ git push origin marripati
+Enumerating objects: 37, done.
+Counting objects: 100% (37/37), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (36/36), 436.43 KiB | 10.64 MiB/s, done.
+Total 36 (delta 9), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (9/9), done.
+remote:
+remote: Create a pull request for 'marripati' on GitHub by visiting:
+remote:      https://github.com/MarripatiSasidhar/github-demo/pull/new/marripat
+remote:
+To https://github.com/MarripatiSasidhar/github-demo.git
+ * [new branch]      marripati -> marripati
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (marripati)
+$ git switch sasi
+Switched to branch 'sasi'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git switch main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 11 and 4 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git switch sasi
+Switched to branch 'sasi'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        some-commit-hash
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git add .
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "new file added"
+[sasi 50ba77e] new file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 some-commit-hash
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin sasi
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 292 bytes | 292.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MarripatiSasidhar/github-demo.git
+   d109312..50ba77e  sasi -> sasi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+nothing to commit, working tree clean
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d codes.txt
+error: branch 'codes.txt' not found
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d new1.doc
+error: branch 'new1.doc' not found
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ rm codes.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ rm humidity.CHANGE.pptx
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ rm new1.doc
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ rm some-commit-hash
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    codes.txt
+        deleted:    humidity.CHANGE.pptx
+        deleted:    new1.doc
+        deleted:    some-commit-hash
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "delete unwanted files"
+On branch sasi
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    codes.txt
+        deleted:    humidity.CHANGE.pptx
+        deleted:    new1.doc
+        deleted:    some-commit-hash
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin sasi
+Everything up-to-date
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    codes.txt
+        deleted:    humidity.CHANGE.pptx
+        deleted:    new1.doc
+        deleted:    some-commit-hash
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git rm codes.txt
+rm 'codes.txt'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git rm humidity.CHANGE.pptx
+rm 'humidity.CHANGE.pptx'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git rm new1.doc
+rm 'new1.doc'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git rm some-commit-hash
+rm 'some-commit-hash'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -a
+Aborting commit due to empty commit message.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    codes.txt
+        deleted:    humidity.CHANGE.pptx
+        deleted:    new1.doc
+        deleted:    some-commit-hash
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "deleted files"
+[sasi ec4292e] deleted files
+ 4 files changed, 57 deletions(-)
+ delete mode 100644 codes.txt
+ delete mode 100644 humidity.CHANGE.pptx
+ delete mode 100644 new1.doc
+ delete mode 100644 some-commit-hash
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin sasi
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 241 bytes | 241.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MarripatiSasidhar/github-demo.git
+   50ba77e..ec4292e  sasi -> sasi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ echo "marripati" >>file.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git add file.txt
+warning: in the working copy of 'file.txt', LF will be replaced by CRLF the next
+ time Git touches it
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "new file added"
+[sasi e125cfd] new file added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/MarripatiSasidhar/github-
+demo.git'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin sasi
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 298 bytes | 149.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MarripatiSasidhar/github-demo.git
+   ec4292e..e125cfd  sasi -> sasi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d file.txt
+error: branch 'file.txt' not found
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ rm ^C
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ rm file.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git add file.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    file.txt
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git restore --staged file.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "file.txt deleted successfully"
+On branch sasi
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin sasi
+Everything up-to-date
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git rm file.txt
+rm 'file.txt'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "file.txt deleted successfully"
+[sasi 3702991] file.txt deleted successfully
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 file.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin sasi
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 255 bytes | 255.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MarripatiSasidhar/github-demo.git
+   e125cfd..3702991  sasi -> sasi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ echo "marripati" >>file.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git add file.txt
+warning: in the working copy of 'file.txt', LF will be replaced by CRLF the next
+ time Git touches it
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "file.txt deleted successfully"
+[sasi 660d4e6] file.txt deleted successfully
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin sasi
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 312 bytes | 156.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MarripatiSasidhar/github-demo.git
+   3702991..660d4e6  sasi -> sasi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git rm --cached file.txt
+rm 'file.txt'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    file.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.txt
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "deleted"
+[sasi 274759a] deleted
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 file.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin sasi
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 237 bytes | 237.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MarripatiSasidhar/github-demo.git
+   660d4e6..274759a  sasi -> sasi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git rebase
+There is no tracking information for the current branch.
+Please specify which branch you want to rebase against.
+See git-rebase(1) for details.
+
+    git rebase '<branch>'
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> sasi
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git rebase origin sasi
+fatal: invalid upstream 'origin'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git rebase sasi
+Current branch sasi is up to date.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d abhi
+Deleted branch abhi (was 79c0885).
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch
+  main
+  marripati
+  sample
+* sasi
+  sasidhar
+  test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin --delete abhi
+To https://github.com/MarripatiSasidhar/github-demo.git
+ - [deleted]         abhi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch
+  main
+  marripati
+  sample
+* sasi
+  sasidhar
+  test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -r
+  origin/main
+  origin/marripati
+  origin/sample
+  origin/sasi
+  origin/sasidhar
+  origin/test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -a
+  main
+  marripati
+  sample
+* sasi
+  sasidhar
+  test
+  remotes/origin/main
+  remotes/origin/marripati
+  remotes/origin/sample
+  remotes/origin/sasi
+  remotes/origin/sasidhar
+  remotes/origin/test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git checkout -b ABHI
+Switched to a new branch 'ABHI'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git status
+On branch ABHI
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git add .
+warning: in the working copy of 'file.txt', LF will be replaced by CRLF the next
+ time Git touches it
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git commit -m "new file added"
+[ABHI 9eab1b1] new file added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git push origin ABHI
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 300 bytes | 150.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'ABHI' on GitHub by visiting:
+remote:      https://github.com/MarripatiSasidhar/github-demo/pull/new/ABHI
+remote:
+To https://github.com/MarripatiSasidhar/github-demo.git
+ * [new branch]      ABHI -> ABHI
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git switch main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 11 and 4 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git checkout ABHI
+Switched to branch 'ABHI'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git status
+On branch ABHI
+nothing to commit, working tree clean
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git checkout main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 11 and 4 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git checkout sasi
+Switched to branch 'sasi'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d A
+error: branch 'A' not found
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d ABHU
+error: branch 'ABHU' not found
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d ABHI
+error: the branch 'ABHI' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D ABHI'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git checkout ABHI
+Switched to branch 'ABHI'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git push origin ABHI
+Everything up-to-date
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git status
+On branch ABHI
+nothing to commit, working tree clean
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git checkout sasi
+Switched to branch 'sasi'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d ABHI
+error: the branch 'ABHI' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D ABHI'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -D^CBHI
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git checkout main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 11 and 4 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git merge ABHI
+fatal: refusing to merge unrelated histories
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ ^C
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git branch
+  ABHI
+* main
+  marripati
+  sample
+  sasi
+  sasidhar
+  test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git branch -d ABHI
+error: the branch 'ABHI' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D ABHI'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/lenovo/Desktop/GIT/.git/
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git pull origin ABHI
+From https://github.com/MarripatiSasidhar/github-demo
+ * branch            ABHI       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git switch ABHI
+Switched to branch 'ABHI'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git init
+Reinitialized existing Git repository in C:/Users/lenovo/Desktop/GIT/.git/
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git pull origin ABHI
+From https://github.com/MarripatiSasidhar/github-demo
+ * branch            ABHI       -> FETCH_HEAD
+Already up to date.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git merge ABHHI
+merge: ABHHI - not something we can merge
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git merge ABHI
+Already up to date.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git pull origin ABHI --allow-unrelated-histories
+From https://github.com/MarripatiSasidhar/github-demo
+ * branch            ABHI       -> FETCH_HEAD
+Already up to date.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (ABHI)
+$ git checkout sasi
+Switched to branch 'sasi'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d ABHI
+error: the branch 'ABHI' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D ABHI'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git pull origin ABHI --allow-unrelated-histories
+From https://github.com/MarripatiSasidhar/github-demo
+ * branch            ABHI       -> FETCH_HEAD
+Updating 274759a..9eab1b1
+Fast-forward
+ file.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d ABHI
+Deleted branch ABHI (was 9eab1b1).
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch
+  main
+  marripati
+  sample
+* sasi
+  sasidhar
+  test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin -- delete ABHI
+error: src refspec delete does not match any
+error: src refspec ABHI does not match any
+error: failed to push some refs to 'https://github.com/MarripatiSasidhar/github-
+demo.git'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -r
+  origin/ABHI
+  origin/main
+  origin/marripati
+  origin/sample
+  origin/sasi
+  origin/sasidhar
+  origin/test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -a
+  main
+  marripati
+  sample
+* sasi
+  sasidhar
+  test
+  remotes/origin/ABHI
+  remotes/origin/main
+  remotes/origin/marripati
+  remotes/origin/sample
+  remotes/origin/sasi
+  remotes/origin/sasidhar
+  remotes/origin/test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch
+  main
+  marripati
+  sample
+* sasi
+  sasidhar
+  test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin -- delete marripati
+error: src refspec delete does not match any
+error: failed to push some refs to 'https://github.com/MarripatiSasidhar/github-
+demo.git'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d marripati
+error: the branch 'marripati' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D marripati'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git pull origin marripati --allow-unrelated-histories
+From https://github.com/MarripatiSasidhar/github-demo
+ * branch            marripati  -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ 1.doc                |   2 ++
+ 2.txt                |   1 +
+ List.txt             |  25 +++++++++++++++++++++++
+ Python               |   1 +
+ README.md            |   2 ++
+ codes.txt            |  56 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ humidity.CHANGE.pptx | Bin 0 -> 455943 bytes
+ new1.doc             |   1 +
+ sample.txt           |   1 +
+ sample1.txt          |   1 +
+ sample2.txt          |   1 +
+ start.doc            |   1 +
+ string.txt           |  33 ++++++++++++++++++++++++++++++
+ testingfile.txt      |   1 +
+ tuple.txt            |  30 +++++++++++++++++++++++++++
+ 15 files changed, 156 insertions(+)
+ create mode 100644 1.doc
+ create mode 100644 2.txt
+ create mode 100644 List.txt
+ create mode 160000 Python
+ create mode 100644 README.md
+ create mode 100644 codes.txt
+ create mode 100644 humidity.CHANGE.pptx
+ create mode 100644 new1.doc
+ create mode 100644 sample.txt
+ create mode 100644 sample1.txt
+ create mode 100644 sample2.txt
+ create mode 100644 start.doc
+ create mode 100644 string.txt
+ create mode 100644 testingfile.txt
+ create mode 100644 tuple.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d marripati
+Deleted branch marripati (was 1a69dac).
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch
+  main
+  sample
+* sasi
+  sasidhar
+  test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin --delete marripati
+To https://github.com/MarripatiSasidhar/github-demo.git
+ - [deleted]         marripati
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin --delete ABHI
+To https://github.com/MarripatiSasidhar/github-demo.git
+ - [deleted]         ABHI
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d test
+Deleted branch test (was 79c0885).
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin --delete test
+To https://github.com/MarripatiSasidhar/github-demo.git
+ - [deleted]         test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+nothing to commit, working tree clean
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git switch sasidhar
+Switched to branch 'sasidhar'
+Your branch is up to date with 'origin/sasidhar'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git branch --d sasi
+error: the branch 'sasi' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D sasi'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git branch -d sasi
+error: the branch 'sasi' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D sasi'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git branch -D^Casi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git merge sasi
+Updating e6bf3a0..3298bbc
+Fast-forward
+ 1.doc                |   2 ++
+ 2.txt                |   1 +
+ List.txt             |  25 +++++++++++++++++++++++
+ Python               |   1 +
+ README.md            |   2 ++
+ basic.txt            |   1 -
+ codes.txt            |  56 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ file.txt             |   1 +
+ github-demo          |   1 +
+ humidity.CHANGE.pptx | Bin 0 -> 455943 bytes
+ new1.doc             |   1 +
+ sample.txt           |   1 +
+ sample1.txt          |   1 +
+ sample2.txt          |   1 +
+ start.doc            |   1 +
+ string.txt           |  33 ++++++++++++++++++++++++++++++
+ testingfile.txt      |   1 +
+ tuple.txt            |  30 +++++++++++++++++++++++++++
+ 18 files changed, 158 insertions(+), 1 deletion(-)
+ create mode 100644 1.doc
+ create mode 100644 2.txt
+ create mode 100644 List.txt
+ create mode 160000 Python
+ create mode 100644 README.md
+ delete mode 100644 basic.txt
+ create mode 100644 codes.txt
+ create mode 100644 file.txt
+ create mode 160000 github-demo
+ create mode 100644 humidity.CHANGE.pptx
+ create mode 100644 new1.doc
+ create mode 100644 sample.txt
+ create mode 100644 sample1.txt
+ create mode 100644 sample2.txt
+ create mode 100644 start.doc
+ create mode 100644 string.txt
+ create mode 100644 testingfile.txt
+ create mode 100644 tuple.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git branch -d sasi
+Deleted branch sasi (was 3298bbc).
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git push origin -delete sasi
+error: did you mean `--delete` (with two dashes)?
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git push origin --delete sasi
+To https://github.com/MarripatiSasidhar/github-demo.git
+ - [deleted]         sasi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git branch
+  main
+  sample
+* sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$

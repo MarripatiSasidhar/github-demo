@@ -1,0 +1,2180 @@
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git status
+On branch sasidhar
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   basic.txt
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git commit -m "New file added"
+[sasidhar (root-commit) e6bf3a0] New file added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 basic.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git status
+On branch sasidhar
+nothing to commit, working tree clean
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git push --set-upstream origin sasidhar
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git push --set-upstream origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'origin'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git push --set-upstream origin sasidhar
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git clone https://github.com/MarripatiSasidhar/github-demo.git
+Cloning into 'github-demo'...
+remote: Enumerating objects: 21, done.
+remote: Counting objects: 100% (21/21), done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 21 (delta 2), reused 16 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (21/21), 435.86 KiB | 3.25 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git push --set-upstream origin sasidhar
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ history
+    1  git version
+    2  exit
+    3  git status
+    4  git clone https://github.com/MarripatiSasidhar/github-demo.git
+    5  git clone https://github.com/MarripatiSasidhar/github-demo.git
+    6  notepad++
+    7  notepad++
+    8  notepad++
+    9  pwd
+   10  notepad++ .bash_profile
+   11  npp
+   12  notepad++ .bash_profile
+   13  npp
+   14  npp
+   15  git config --global core.editor "motepad++.exe -multiInst -nosession"
+   16  npp .gitconfig
+   17  npp .gitconfig  -e
+   18  npp .gitconfig  sasi
+   19  npp .gitconfig  sasi
+   20  npp sai
+   21  npp sai
+   22  npp
+   23  git config --global core.editor "motepad++.exe -multiInst -nosession"
+   24  git config --global core.editor "kotepad++.exe -multiInst -nosession"
+   25  git config --global core.editor "gyujotepad++.exe -multiInst -nosession"
+   26  git config --global core.editor "gyujotepad++.exe -multiInst -nosessikhjn"
+   27  git config --global core.editor "gyujotepad++.exe -muInst -nosessikhjn"
+   28  git config --global core.editor
+   29  git config --global core.editor ""
+   30  npp saigj
+   31  npp .gitconfig
+   32  pwd
+   33  git init fresh-project
+   34  ls
+   35  cd projects
+   36  pwd
+   37  git init fresh-project
+   38  cd fresh-project/
+   39  ls
+   40  ls -al
+   41   cd .git/
+   42  ls
+   43  cd ..
+   44  git status
+   45  npp basicpythontext.txt
+   46  git status
+   47  git add basicpythontext.txt
+   48  git status
+   49  git commit
+   50  git commit
+   51  git status
+   52  git commit
+   53  git config --global core.editor "notepad++.exe -multiInst -nosession"
+   54  git add basicpythontext.txt
+   55  git commit
+   56  git push origin master
+   57  git push origin main
+   58  rm -rf
+   59  rm -rf ls
+   60  ls
+   61  cd..
+   62  cd ..
+   63  ls
+   64  pwd
+   65  git push origin master
+   66  git push origin main
+   67  rm -rf freshproject/
+   68  ls
+   69  rm -rf freshprojecfrvrvervt/
+   70  rm -rf fresh-project/
+   71  ls
+   72    unzip ~/Desktop/Desktop.zip
+   73  unzip ~/Desktop/Desktop12.7z
+   74  unzip ~/Desktop/Desktop.zip
+   75   ls
+   76   exit
+   77  git version
+   78  pwd
+   79  mkdir projects
+   80  cd projects/
+   81  git branch
+   82  git status
+   83  git version
+   84  git config --global user.name "Sasidhar Marripati"
+   85  git config --global user.email "marripati.sasidhar@gmail.com"
+   86  git config --global list
+   87  git config global --list
+   88  git config --global --list
+   89  git clone https://github.com/MarripatiSasidhar/github-demo.git
+   90  ls
+   91  cd github-demo/
+   92  ls
+   93  git status
+   94  git branch
+   95  echo "test git quick start demo" >> start.doc
+   96  ls
+   97  cat start.demo
+   98  cat start.doc
+   99  git status
+  100  git add start.doc
+  101  git commit -m "Adding start doc file"
+  102  git push origin master
+  103  git push origin main
+  104  cd
+  105  cd esktop
+  106  cd desktop
+  107  ls
+  108  git add LG.txt
+  109  notepad++
+  110  notepad++
+  111  git branch
+  112  git status
+  113  git add sample codes
+  114  git add sample codes.txt
+  115  git add samplecodes.txt
+  116  git status
+  117  git add codes.txt
+  118  git status
+  119  git config --global core.autocrlf true
+  120  git add codes.txt
+  121  git status
+  122  git status
+  123  git add humidity.change
+  124  git add humidity.CHANGE.pptx
+  125  git commit -m "adding codes file"
+  126  git push origin master
+  127  git push origin main
+  128  pwd
+  129  cd projects
+  130  pwd
+  131  git init fresh-project
+  132  ls
+  133  cd fresh-project/
+  134  ls
+  135  ls -a1
+  136  cd .git/
+  137  rfhtfh
+  138  cd ..
+  139  git status
+  140  cpp hipster.text
+  141  npp hipster.txt
+  142  git status
+  143  git add hipster.txt
+  144  git status
+  145  git commit
+  146  git status
+  147   cd ..
+  148  pwd
+  149  ls
+  150  git push fresh-project/
+  151  cd fresh-project/
+  152  git push origin master
+  153  git push main master
+  154  cd ..
+  155  rm -rf fresh-project/
+  156  ls
+  157  cd ..
+  158  pwd
+  159  cd projects/
+  160  unzip ~/Downloads/DRIVERS.zip
+  161  ls
+  162  mv initializr web-project
+  163  mv DRIVER web-project
+  164  mv DRIVERS web-project
+  165  cd web-project/
+  166  pwd
+  167  ls
+  168  git init
+  169  ls -al
+  170  git status
+  171  git add .
+  172  git status
+  173  git commit -m "My first commit, inline"
+  174  git status
+  175  git status
+  176  ls
+  177  ls -al
+  178  rm -rf .git
+  179  ls
+  180  cd ..
+  181  pwd
+  182  ls
+  183  rm -rf web-project/
+  184  ls
+  185  git status
+  186  git init
+  187  git status
+  188  git branch
+  189  git checkout -b sasidhar
+  190  git branch
+  191  git status
+  192  git push --set-upstream origin sasidhar
+  193  git push --set-upstream sasidhar
+  194  git push --set-upstream sasidhar sasidhar
+  195  git push --set-upstream sasidhar master
+  196  git push --set-upstream sasidhar main
+  197  git push origin sasidhar
+  198  git config --global list
+  199  git config --global --list
+  200  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  201  git clone git@github.com:MarripatiSasidhar/github-demo.git
+  202  ls
+  203  cd github-demo/
+  204  git status
+  205  git push
+  206  cd ..
+  207  git push
+  208  git push sasidhar
+  209   git push --set-upstream sasidhar sasidhar
+  210   git push --set-upstream origin sasidhar
+  211   git push origin sasidhar
+  212  git commit -m "Initial commit on sasidhar branch"
+  213  git push origin sasidhar
+  214  git commit -m "Initial commit on sasidhar branch"
+  215  git status
+  216  cd github-demo/
+  217  git status
+  218  git push origin main
+  219  git branch
+  220  git init
+  221  git branch
+  222  git status
+  223  git add  List.txt
+  224          datatypes.txt
+  225          string.txt
+  226          tuple.txt
+  227  git add  List.txt datatypes.txt string.txt tuple.txt
+  228  git status
+  229  git commit -b "New python files added"
+  230  git commit -m "New python files added"
+  231  git status
+  232  git --set-upstream origin master
+  233  git push --set-upstream origin master
+  234  git push --set-upstream master
+  235  git push
+  236  git push origin master
+  237  git push origin main
+  238  git push origin main
+  239  git push origin master
+  240  git push --set-upstream origin sasidhar
+  241  git push -u origin master
+  242  git push -u origin main
+  243  git clone git@github.com:MarripatiSasidhar/github-demo.git
+  244  git init
+  245  git clone git@github.com:MarripatiSasidhar/github-demo.git
+  246  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  247  git push origin master
+  248  git push origin main
+  249  git push --set-upstream origin sasidhar
+  250  git push --set-upstream origin main
+  251  git push --set-upstream origin main
+  252  git pull
+  253  git push --set-upstream origin
+  254  git push --set-upstream sasidhar
+  255  git checkout main
+  256  git init
+  257  git checkout main
+  258  git checkout master
+  259  git switch master
+  260  git branch
+  261  git status
+  262  git commit -m "new python files added"
+  263  git commit -m "Intial commit"
+  264  git push origin sasidhar
+  265  git checkout -b sasidhar
+  266  git log
+  267  git add python
+  268  git status
+  269  git commit -m "Intial changes done"
+  270  cd python
+  271  git status
+  272  git add List.txt
+  273  git status
+  274  git push origin master
+  275  git push origin main
+  276  git branch abhi
+  277  git branch
+  278  git checkout abhi
+  279  git add List.txt
+  280  git status
+  281  git add.
+  282  git add .
+  283  git status
+  284  git commit -m "initial changes done"
+  285  git push origin abhi
+  286  git push origin master
+  287  git push origin main
+  288  git pull
+  289  git rm
+  290  git -rm
+  291  git checkout -b marrips
+  292  git commit -m "Intial changes"
+  293  git push --set-upstream origin marrips
+  294  git push --set-upstream origin main
+  295  git push --set-upstream origin master
+  296  git push origin master
+  297  git push origin marrips
+  298   git config --global --list
+  299  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  300  git clone git@github.com:MarripatiSasidhar/github-demo.git
+  301  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  302  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  303  git push origin marrips
+  304  git push origin master
+  305  git add .
+  306  git commit -m "Your commit message"
+  307  git push origin marrips
+  308  git push --set-upstream origin marrips
+  309  git push --set-upstream main marrips
+  310  git push --set-upstream master marrips
+  311  git push --set-upstream github-demo marrips
+  312  git branch
+  313  git status
+  314  git add python
+  315  git status
+  316  git commit - m "new python folder added"
+  317  git commit -m "new python folder added"
+  318  git status
+  319  cd github-demo/
+  320  git status
+  321  git add  List.txt string.txt tuple.txt
+  322  git status
+  323  git branch
+  324  git commit -m "python files added"
+  325  git push origin main
+  326  git checkout -b marrips
+  327  git checkout -b marrip
+  328  git commit -m "initial changes"
+  329  git push --set-upstream origin marrip
+  330  git status
+  331  git branch
+  332  git push --set-upstream origin marrips
+  333  git push --set-upstream origin sasidhar
+  334  git branch
+  335  git switch marrips
+  336  git branch --delete
+  337  git branch --delete marrip
+  338  git branch
+  339  git switch marrip
+  340  git switch marrips
+  341  git branch --delete marrip
+  342  git branch
+  343  git push github-demo --delete marrip
+  344  git branch -d marrip
+  345  git branch
+  346  git branch -d marrips
+  347  git branch -d marrips
+  348  git switch marrip
+  349  git branch -d marrips
+  350  git branch -d origin marrips
+  351  git branch -d origin marrip
+  352  git push --set-upstream origin marrips
+  353  git checkout -b marrip
+  354  git commit -m "initial changes"
+  355  git push --set-upstream origin marrip
+  356  git branch -d origin marrip
+  357  git branch -d origin marrip
+  358  git switch marrips
+  359  git branch -d origin marrip
+  360  git push --delete origin marrip
+  361  git checkout -b abhi
+  362  git commit -m "Initial changes done again"
+  363  git push --set-upstream origin abhi
+  364  git pull
+  365  git push --delete origin marrips
+  366  git switch main
+  367  git status
+  368  git switch abhi
+  369  git status
+  370  git switch main
+  371  git switch abhi
+  372  git status
+  373  git add humidity.CHANGE.pptx
+  374  git status
+  375  git commit -m "added new ppt"
+  376  git status
+  377  git push --set-upstream origin abhi
+  378  git status
+  379  git rm --cached python
+  380  ls
+  381  git rm --cached Python
+  382  ls
+  383  git rm --cached 'Python'
+  384  rm Python
+  385  rm tuple.txt
+  386  ls
+  387  git pull
+  388  git rm -r --cached Python
+  389  git rm -r --cached Python/
+  390  rm -r Python
+  391  ls
+  392  rm -r github-demo/
+  393  ls
+  394  ls
+  395  git switch main
+  396  git switch main
+  397  git checkout main
+  398  rm
+  399  ls
+  400  rm string.txt
+  401  ls
+  402  git checkout main
+  403  git status
+  404  git add codes.txt
+  405  git commit -m "latest code added"
+  406  git push
+  407  rm -r github-demo
+  408  cd ..
+  409  rm -r github-demo
+  410  cd github-demo
+  411  ls
+  412  git switch abhi
+  413  git checkout abhi
+  414  git checkout abhi
+  415  git branch
+  416  git switch abhi
+  417  ls
+  418  cd github-demo
+  419  ls
+  420  git switch abhi
+  421  git checkout abhi
+  422  git branch
+  423  git switch main
+  424  git switch master
+  425  git chechout-b abhi
+  426  git chechout -b abhi
+  427  git checkout -b abhi
+  428  git push --delete origin marrips
+  429  git branch
+  430  git push --delete origin marrips
+  431  git branch
+  432  rm -r marrips
+  433  git checkout -b marrips
+  434  git checkout -b marrip
+  435  git init
+  436  git commit -m "new branch created"
+  437  git status
+  438  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  439  git branch
+  440  git status
+  441  git init
+  442  git status
+  443  git add List.txt
+  444  git branch
+  445  git switch marrips
+  446  git status
+  447  git branch
+  448  git commit -m "new branch created"
+  449  git push --set-upstream origin marrips
+  450  git push --set-upstream marrips
+  451  git pull
+  452  git push --set-upstream origin marrips
+  453  git switch abhi
+  454  git checkout abhi
+  455  git stash
+  456  git checkout abhi
+  457  git stash
+  458  git checkout abhi
+  459  git status
+  460  git commit -m "latest changes"
+  461  git push --set-upstream origin marrips
+  462  history
+  463  git status
+  464  git commit -m "New file added"
+  465  git status
+  466  git push --set-upstream origin sasidhar
+  467  git push --set-upstream origin master
+  468  git push --set-upstream origin sasidhar
+  469  git push origin main
+  470  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  471  git push --set-upstream origin sasidhar
+  472  git push origin main
+  473  history
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ ^C
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git push --set-upstream origin sasidhar
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ ^C
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git remote -v
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git remote add origin ^C
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git remote add origin https://github.com/MarripatiSasidhar/github-demo.git
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git push --set-upstream origin sasidhar
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 254 bytes | 127.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'sasidhar' on GitHub by visiting:
+remote:      https://github.com/MarripatiSasidhar/github-demo/pull/new/sasidhar
+remote:
+To https://github.com/MarripatiSasidhar/github-demo.git
+ * [new branch]      sasidhar -> sasidhar
+branch 'sasidhar' set up to track 'origin/sasidhar'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git status
+On branch sasidhar
+Your branch is up to date with 'origin/sasidhar'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        github-demo/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git branch
+* sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git push --set-upstream origin abhi
+error: src refspec abhi does not match any
+error: failed to push some refs to 'https://github.com/MarripatiSasidhar/github-
+demo.git'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git branch
+* sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git checkout abhi
+error: pathspec 'abhi' did not match any file(s) known to git
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git switch abhi
+fatal: invalid reference: abhi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git clone https://github.com/MarripatiSasidhar/github-demo.git
+fatal: destination path 'github-demo' already exists and is not an empty directo
+ry.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git switch main
+fatal: invalid reference: main
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git switch master
+fatal: invalid reference: master
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git switch origin
+fatal: invalid reference: origin
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git che
+checkout      cherry        cherry-pick
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git che
+checkout      cherry        cherry-pick
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git che
+checkout      cherry        cherry-pick
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git checkout -b sasi
+Switched to a new branch 'sasi'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ echo "Hi, this is a testing file to push in branch sasi..!" >>testingfile.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        github-demo/
+        testingfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git add testingfile.txt
+warning: in the working copy of 'testingfile.txt', LF will be replaced by CRLF t
+he next time Git touches it
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "Intitial changes done"
+[sasi 4724007] Intitial changes done
+ 1 file changed, 1 insertion(+)
+ create mode 100644 testingfile.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        github-demo/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch
+* sasi
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push --set-upstream origin sasi
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'sasi' on GitHub by visiting:
+remote:      https://github.com/MarripatiSasidhar/github-demo/pull/new/sasi
+remote:
+To https://github.com/MarripatiSasidhar/github-demo.git
+ * [new branch]      sasi -> sasi
+branch 'sasi' set up to track 'origin/sasi'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch
+* sasi
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Your branch is up to date with 'origin/sasi'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        github-demo/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git switch sasi
+sasi       sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git switch sasi
+sasi       sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git switch sasi
+sasi       sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git switch sasidhar
+Switched to branch 'sasidhar'
+Your branch is up to date with 'origin/sasidhar'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git switch abhi
+fatal: invalid reference: abhi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git remote -v
+origin  https://github.com/MarripatiSasidhar/github-demo.git (fetch)
+origin  https://github.com/MarripatiSasidhar/github-demo.git (push)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git switch abhi
+fatal: invalid reference: abhi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ ^C
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git fetch
+remote: Enumerating objects: 21, done.
+remote: Counting objects: 100% (21/21), done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 21 (delta 2), reused 16 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (21/21), 435.84 KiB | 2.32 MiB/s, done.
+From https://github.com/MarripatiSasidhar/github-demo
+ * [new branch]      abhi       -> origin/abhi
+ * [new branch]      main       -> origin/main
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasidhar)
+$ git switch abhi
+M       github-demo
+branch 'abhi' set up to track 'origin/abhi'.
+Switched to a new branch 'abhi'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ git branch
+* abhi
+  sasi
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ ls .git/refs/heads/
+abhi  sasi  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ git switch --track origin/abhi
+fatal: a branch named 'abhi' already exists
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ git switch --track abhi
+fatal: missing branch name; try -c
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ git switch --track origin/sasi
+fatal: a branch named 'sasi' already exists
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ git fetch -all
+error: did you mean `--all` (with two dashes)?
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ git fetch --all
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ git branch
+* abhi
+  sasi
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ ll
+total 456
+-rw-r--r-- 1 lenovo 197121   1284 Mar 29 11:49 codes.txt
+drwxr-xr-x 1 lenovo 197121      0 Mar 29 11:35 github-demo/
+-rw-r--r-- 1 lenovo 197121 455943 Mar 29 11:49 humidity.CHANGE.pptx
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ cd github-demo/
+L
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT/github-demo (main)
+$ LL
+bash: LL: command not found
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT/github-demo (main)
+$ ll
+total 460
+-rw-r--r-- 1 lenovo 197121    396 Mar 29 11:35 List.txt
+-rw-r--r-- 1 lenovo 197121     70 Mar 29 11:35 README.md
+-rw-r--r-- 1 lenovo 197121   1284 Mar 29 11:35 codes.txt
+-rw-r--r-- 1 lenovo 197121 455943 Mar 29 11:35 humidity.CHANGE.pptx
+-rw-r--r-- 1 lenovo 197121     27 Mar 29 11:35 start.doc
+-rw-r--r-- 1 lenovo 197121    788 Mar 29 11:35 string.txt
+-rw-r--r-- 1 lenovo 197121    469 Mar 29 11:35 tuple.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT/github-demo (main)
+$ git branch
+* main
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT/github-demo (main)
+$ cd ..
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ ll
+total 456
+-rw-r--r-- 1 lenovo 197121   1284 Mar 29 11:49 codes.txt
+drwxr-xr-x 1 lenovo 197121      0 Mar 29 11:35 github-demo/
+-rw-r--r-- 1 lenovo 197121 455943 Mar 29 11:49 humidity.CHANGE.pptx
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ git branch
+* abhi
+  sasi
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ git branch
+* abhi
+  sasi
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ git fetch --all
+From https://github.com/MarripatiSasidhar/github-demo
+ * [new branch]      test       -> origin/test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ git branch
+* abhi
+  sasi
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (abhi)
+$ git checkout test
+M       github-demo
+branch 'test' set up to track 'origin/test'.
+Switched to a new branch 'test'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (test)
+$ git branch
+  abhi
+  sasi
+  sasidhar
+* test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (test)
+$ git checkout -b sample
+Switched to a new branch 'sample'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sample)
+$ git branch
+  abhi
+* sample
+  sasi
+  sasidhar
+  test
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sample)
+$ git push origin sample
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'sample' on GitHub by visiting:
+remote:      https://github.com/MarripatiSasidhar/github-demo/pull/new/sample
+remote:
+To https://github.com/MarripatiSasidhar/github-demo.git
+ * [new branch]      sample -> sample
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sample)
+$ git branch -d abhi
+Deleted branch abhi (was 79c0885).
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sample)
+$ git branch -d test
+Deleted branch test (was 79c0885).
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sample)
+$ git branch
+* sample
+  sasi
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sample)
+$ git checkout sasi
+warning: unable to rmdir 'github-demo': Directory not empty
+Switched to branch 'sasi'
+Your branch is up to date with 'origin/sasi'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -d sample
+error: the branch 'sample' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D sample'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -D sample
+Deleted branch sample (was 79c0885).
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -D sample
+error: branch 'sample' not found
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch
+* sasi
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ ll
+total 6
+-rw-r--r-- 1 lenovo 197121 31 Mar 29 11:59 basic.txt
+drwxr-xr-x 1 lenovo 197121  0 Mar 29 11:35 github-demo/
+-rw-r--r-- 1 lenovo 197121 54 Mar 29 11:59 testingfile.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git remote -v
+origin  https://github.com/MarripatiSasidhar/github-demo.git (fetch)
+origin  https://github.com/MarripatiSasidhar/github-demo.git (push)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ ll
+total 6
+-rw-r--r-- 1 lenovo 197121 31 Mar 29 11:59 basic.txt
+drwxr-xr-x 1 lenovo 197121  0 Mar 29 11:35 github-demo/
+-rw-r--r-- 1 lenovo 197121 54 Mar 29 11:59 testingfile.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ ls-lrt
+bash: ls-lrt: command not found
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ ll
+total 6
+-rw-r--r-- 1 lenovo 197121 31 Mar 29 11:59 basic.txt
+drwxr-xr-x 1 lenovo 197121  0 Mar 29 11:35 github-demo/
+-rw-r--r-- 1 lenovo 197121 54 Mar 29 11:59 testingfile.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git rm basic.txt
+rm 'basic.txt'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ ll
+total 5
+drwxr-xr-x 1 lenovo 197121  0 Mar 29 11:35 github-demo/
+-rw-r--r-- 1 lenovo 197121 54 Mar 29 11:59 testingfile.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git add .
+warning: adding embedded git repository: github-demo
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> github-demo
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached github-demo
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "deleted-basic.txt"
+[sasi cc584cc] deleted-basic.txt
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ delete mode 100644 basic.txt
+ create mode 160000 github-demo
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin sasi
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 292 bytes | 292.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MarripatiSasidhar/github-demo.git
+   4724007..cc584cc  sasi -> sasi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ ls -a
+./  ../  .git/  github-demo/  testingfile.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ ls-lrt
+bash: ls-lrt: command not found
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ ls -lrt
+total 5
+drwxr-xr-x 1 lenovo 197121  0 Mar 29 11:35 github-demo/
+-rw-r--r-- 1 lenovo 197121 54 Mar 29 11:59 testingfile.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ ll
+total 5
+drwxr-xr-x 1 lenovo 197121  0 Mar 29 11:35 github-demo/
+-rw-r--r-- 1 lenovo 197121 54 Mar 29 11:59 testingfile.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git merge
+Already up to date.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ echo "test file" >>sample.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Your branch is up to date with 'origin/sasi'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "latest sample file added"
+On branch sasi
+Your branch is up to date with 'origin/sasi'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git merge
+Already up to date.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin sasi
+Everything up-to-date
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push --set-upstream origin sasi
+branch 'sasi' set up to track 'origin/sasi'.
+Everything up-to-date
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Your branch is up to date with 'origin/sasi'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git add.*
+git: 'add.*' is not a git command. See 'git --help'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git add .
+warning: in the working copy of 'sample.txt', LF will be replaced by CRLF the next time Git touches it
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ ^C
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Your branch is up to date with 'origin/sasi'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sample.txt
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ echo "Check file" >>sample1.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Your branch is up to date with 'origin/sasi'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sample.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample1.txt
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ echo "Check file one more" >>sample2.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Your branch is up to date with 'origin/sasi'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sample.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample1.txt
+        sample2.txt
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git add .
+warning: in the working copy of 'sample1.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'sample2.txt', LF will be replaced by CRLF the next time Git touches it
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Your branch is up to date with 'origin/sasi'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sample.txt
+        new file:   sample1.txt
+        new file:   sample2.txt
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "New files sample1 and sample2 added"
+[sasi 23f21c8] New files sample1 and sample2 added
+ 3 files changed, 3 insertions(+)
+ create mode 100644 sample.txt
+ create mode 100644 sample1.txt
+ create mode 100644 sample2.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git merge
+Already up to date.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git push origin sasi
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 453 bytes | 226.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MarripatiSasidhar/github-demo.git
+   cc584cc..23f21c8  sasi -> sasi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Your branch is up to date with 'origin/sasi'.
+
+nothing to commit, working tree clean
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ ll
+total 8
+drwxr-xr-x 1 lenovo 197121  0 Mar 29 11:35 github-demo/
+-rw-r--r-- 1 lenovo 197121 10 Mar 29 12:08 sample.txt
+-rw-r--r-- 1 lenovo 197121 11 Mar 29 12:15 sample1.txt
+-rw-r--r-- 1 lenovo 197121 20 Mar 29 12:15 sample2.txt
+-rw-r--r-- 1 lenovo 197121 54 Mar 29 11:59 testingfile.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ cd github-demo/
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT/github-demo (main)
+$ ll
+total 460
+-rw-r--r-- 1 lenovo 197121    396 Mar 29 11:35 List.txt
+-rw-r--r-- 1 lenovo 197121     70 Mar 29 11:35 README.md
+-rw-r--r-- 1 lenovo 197121   1284 Mar 29 11:35 codes.txt
+-rw-r--r-- 1 lenovo 197121 455943 Mar 29 11:35 humidity.CHANGE.pptx
+-rw-r--r-- 1 lenovo 197121     27 Mar 29 11:35 start.doc
+-rw-r--r-- 1 lenovo 197121    788 Mar 29 11:35 string.txt
+-rw-r--r-- 1 lenovo 197121    469 Mar 29 11:35 tuple.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT/github-demo (main)
+$ git switch sasi
+fatal: invalid reference: sasi
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT/github-demo (main)
+$ git checkout sasi
+error: pathspec 'sasi' did not match any file(s) known to git
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT/github-demo (main)
+$ cd ..
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git switch sasi
+Already on 'sasi'
+Your branch is up to date with 'origin/sasi'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git config --global core.autocrlf
+true
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/MarripatiSasidhar/github-demo.git
+  Push  URL: https://github.com/MarripatiSasidhar/github-demo.git
+  HEAD branch: main
+  Remote branches:
+    abhi     tracked
+    main     tracked
+    sample   tracked
+    sasi     tracked
+    sasidhar tracked
+    test     tracked
+  Local branches configured for 'git pull':
+    sasi     merges with remote sasi
+    sasidhar merges with remote sasidhar
+  Local refs configured for 'git push':
+    sasi     pushes to sasi     (up to date)
+    sasidhar pushes to sasidhar (up to date)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git checkout main
+warning: unable to rmdir 'github-demo': Directory not empty
+branch 'main' set up to track 'origin/main'.
+Switched to a new branch 'main'
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git checkout sasi
+Switched to branch 'sasi'
+Your branch is up to date with 'origin/sasi'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git checkout main
+warning: unable to rmdir 'github-demo': Directory not empty
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git checkout sasi
+Switched to branch 'sasi'
+Your branch is up to date with 'origin/sasi'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git switch $(git remote show origin | grep 'HEAD branch' | awk '{print $NF}')
+warning: unable to rmdir 'github-demo': Directory not empty
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git rebase
+Current branch main is up to date.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git merge
+Already up to date.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git checkout sasi
+Switched to branch 'sasi'
+Your branch is up to date with 'origin/sasi'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git merge main
+fatal: refusing to merge unrelated histories
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git merge sasi main
+fatal: refusing to merge unrelated histories
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git checkout main
+warning: unable to rmdir 'github-demo': Directory not empty
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git merge sasi main
+fatal: refusing to merge unrelated histories
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git merge sasi
+fatal: refusing to merge unrelated histories
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git rebase sasi
+Successfully rebased and updated refs/heads/main.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git log --oneline
+3f83f53 (HEAD -> main) python files added
+355878d adding codes file
+d12d183 Adding start doc file
+72ad9d9 Initial commit
+23f21c8 (origin/sasi, sasi) New files sample1 and sample2 added
+cc584cc deleted-basic.txt
+4724007 Intitial changes done
+e6bf3a0 (origin/sasidhar, sasidhar) New file added
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git merge sasidhar
+Already up to date.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git checkout sasi
+Switched to branch 'sasi'
+Your branch is up to date with 'origin/sasi'.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ touch 2.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Your branch is up to date with 'origin/sasi'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ cat 2.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ echo "New content added" >>2.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ cat 2.txt
+New content added
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Your branch is up to date with 'origin/sasi'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "New file created in sasi branch"
+On branch sasi
+Your branch is up to date with 'origin/sasi'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git add .
+warning: in the working copy of '2.txt', LF will be replaced by CRLF the next time Git touches it
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "New file created in sasi branch"
+[sasi 405f56b] New file created in sasi branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 2.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git log --oneline
+405f56b (HEAD -> sasi) New file created in sasi branch
+23f21c8 (origin/sasi) New files sample1 and sample2 added
+cc584cc deleted-basic.txt
+4724007 Intitial changes done
+e6bf3a0 (origin/sasidhar, sasidhar) New file added
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git checkout main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 8 and 4 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git merge sasi
+Merge made by the 'ort' strategy.
+ 2.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 2.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git log --oneline
+16899f4 (HEAD -> main) Merge branch 'sasi'
+405f56b (sasi) New file created in sasi branch
+3f83f53 python files added
+355878d adding codes file
+d12d183 Adding start doc file
+72ad9d9 Initial commit
+23f21c8 (origin/sasi) New files sample1 and sample2 added
+cc584cc deleted-basic.txt
+4724007 Intitial changes done
+e6bf3a0 (origin/sasidhar, sasidhar) New file added
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git switch sasi
+Switched to branch 'sasi'
+Your branch is ahead of 'origin/sasi' by 1 commit.
+  (use "git push" to publish your local commits)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ touch 1.doc
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Your branch is ahead of 'origin/sasi' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.doc
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ cat 1.doc
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ echo "I am a empty microsoft-document" >>1.doc
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ cat 1.doc
+I am a empty microsoft-document
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ cat 1.doc
+I am an empty microsoft-document
+
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git status
+On branch sasi
+Your branch is ahead of 'origin/sasi' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.doc
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git add .
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git commit -m "added a new empty microsoft document"
+[sasi 83546bd] added a new empty microsoft document
+ 1 file changed, 2 insertions(+)
+ create mode 100644 1.doc
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git che
+checkout      cherry        cherry-pick
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git checkout sasi
+Already on 'sasi'
+Your branch is ahead of 'origin/sasi' by 2 commits.
+  (use "git push" to publish your local commits)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git checkout main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 10 and 4 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git rebase sasi
+Successfully rebased and updated refs/heads/main.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 10 and 4 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+nothing to commit, working tree clean
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git log --oneline
+b5398e8 (HEAD -> main) python files added
+0899770 adding codes file
+12a321a Adding start doc file
+5084f4f Initial commit
+83546bd (sasi) added a new empty microsoft document
+405f56b New file created in sasi branch
+23f21c8 (origin/sasi) New files sample1 and sample2 added
+cc584cc deleted-basic.txt
+4724007 Intitial changes done
+e6bf3a0 (origin/sasidhar, sasidhar) New file added
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ ls
+1.doc  2.txt  List.txt  README.md  codes.txt  github-demo/  humidity.CHANGE.pptx  sample.txt  sample1.txt  sample2.txt  start.doc  string.txt  testingfile.txt  tuple.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git checkout sasi
+Switched to branch 'sasi'
+Your branch is ahead of 'origin/sasi' by 2 commits.
+  (use "git push" to publish your local commits)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ ls
+1.doc  2.txt  github-demo/  sample.txt  sample1.txt  sample2.txt  testingfile.txt
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch
+  main
+* sasi
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (sasi)
+$ git branch -m "manoj"
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj)
+$ git branch
+  main
+* manoj
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj)
+$ git checkout main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 10 and 4 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git branch -m "manoj1"
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ git branch
+  manoj
+* manoj1
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ git branch
+  manoj
+* manoj1
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ git branch manoj2
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ git branch
+  manoj
+* manoj1
+  manoj2
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config advice.addEmptyPathspec false"
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ history
+  141  npp hipster.txt
+  142  git status
+  143  git add hipster.txt
+  144  git status
+  145  git commit
+  146  git status
+  147   cd ..
+  148  pwd
+  149  ls
+  150  git push fresh-project/
+  151  cd fresh-project/
+  152  git push origin master
+  153  git push main master
+  154  cd ..
+  155  rm -rf fresh-project/
+  156  ls
+  157  cd ..
+  158  pwd
+  159  cd projects/
+  160  unzip ~/Downloads/DRIVERS.zip
+  161  ls
+  162  mv initializr web-project
+  163  mv DRIVER web-project
+  164  mv DRIVERS web-project
+  165  cd web-project/
+  166  pwd
+  167  ls
+  168  git init
+  169  ls -al
+  170  git status
+  171  git add .
+  172  git status
+  173  git commit -m "My first commit, inline"
+  174  git status
+  175  git status
+  176  ls
+  177  ls -al
+  178  rm -rf .git
+  179  ls
+  180  cd ..
+  181  pwd
+  182  ls
+  183  rm -rf web-project/
+  184  ls
+  185  git status
+  186  git init
+  187  git status
+  188  git branch
+  189  git checkout -b sasidhar
+  190  git branch
+  191  git status
+  192  git push --set-upstream origin sasidhar
+  193  git push --set-upstream sasidhar
+  194  git push --set-upstream sasidhar sasidhar
+  195  git push --set-upstream sasidhar master
+  196  git push --set-upstream sasidhar main
+  197  git push origin sasidhar
+  198  git config --global list
+  199  git config --global --list
+  200  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  201  git clone git@github.com:MarripatiSasidhar/github-demo.git
+  202  ls
+  203  cd github-demo/
+  204  git status
+  205  git push
+  206  cd ..
+  207  git push
+  208  git push sasidhar
+  209   git push --set-upstream sasidhar sasidhar
+  210   git push --set-upstream origin sasidhar
+  211   git push origin sasidhar
+  212  git commit -m "Initial commit on sasidhar branch"
+  213  git push origin sasidhar
+  214  git commit -m "Initial commit on sasidhar branch"
+  215  git status
+  216  cd github-demo/
+  217  git status
+  218  git push origin main
+  219  git branch
+  220  git init
+  221  git branch
+  222  git status
+  223  git add  List.txt
+  224          datatypes.txt
+  225          string.txt
+  226          tuple.txt
+  227  git add  List.txt datatypes.txt string.txt tuple.txt
+  228  git status
+  229  git commit -b "New python files added"
+  230  git commit -m "New python files added"
+  231  git status
+  232  git --set-upstream origin master
+  233  git push --set-upstream origin master
+  234  git push --set-upstream master
+  235  git push
+  236  git push origin master
+  237  git push origin main
+  238  git push origin main
+  239  git push origin master
+  240  git push --set-upstream origin sasidhar
+  241  git push -u origin master
+  242  git push -u origin main
+  243  git clone git@github.com:MarripatiSasidhar/github-demo.git
+  244  git init
+  245  git clone git@github.com:MarripatiSasidhar/github-demo.git
+  246  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  247  git push origin master
+  248  git push origin main
+  249  git push --set-upstream origin sasidhar
+  250  git push --set-upstream origin main
+  251  git push --set-upstream origin main
+  252  git pull
+  253  git push --set-upstream origin
+  254  git push --set-upstream sasidhar
+  255  git checkout main
+  256  git init
+  257  git checkout main
+  258  git checkout master
+  259  git switch master
+  260  git branch
+  261  git status
+  262  git commit -m "new python files added"
+  263  git commit -m "Intial commit"
+  264  git push origin sasidhar
+  265  git checkout -b sasidhar
+  266  git log
+  267  git add python
+  268  git status
+  269  git commit -m "Intial changes done"
+  270  cd python
+  271  git status
+  272  git add List.txt
+  273  git status
+  274  git push origin master
+  275  git push origin main
+  276  git branch abhi
+  277  git branch
+  278  git checkout abhi
+  279  git add List.txt
+  280  git status
+  281  git add.
+  282  git add .
+  283  git status
+  284  git commit -m "initial changes done"
+  285  git push origin abhi
+  286  git push origin master
+  287  git push origin main
+  288  git pull
+  289  git rm
+  290  git -rm
+  291  git checkout -b marrips
+  292  git commit -m "Intial changes"
+  293  git push --set-upstream origin marrips
+  294  git push --set-upstream origin main
+  295  git push --set-upstream origin master
+  296  git push origin master
+  297  git push origin marrips
+  298   git config --global --list
+  299  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  300  git clone git@github.com:MarripatiSasidhar/github-demo.git
+  301  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  302  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  303  git push origin marrips
+  304  git push origin master
+  305  git add .
+  306  git commit -m "Your commit message"
+  307  git push origin marrips
+  308  git push --set-upstream origin marrips
+  309  git push --set-upstream main marrips
+  310  git push --set-upstream master marrips
+  311  git push --set-upstream github-demo marrips
+  312  git branch
+  313  git status
+  314  git add python
+  315  git status
+  316  git commit - m "new python folder added"
+  317  git commit -m "new python folder added"
+  318  git status
+  319  cd github-demo/
+  320  git status
+  321  git add  List.txt string.txt tuple.txt
+  322  git status
+  323  git branch
+  324  git commit -m "python files added"
+  325  git push origin main
+  326  git checkout -b marrips
+  327  git checkout -b marrip
+  328  git commit -m "initial changes"
+  329  git push --set-upstream origin marrip
+  330  git status
+  331  git branch
+  332  git push --set-upstream origin marrips
+  333  git push --set-upstream origin sasidhar
+  334  git branch
+  335  git switch marrips
+  336  git branch --delete
+  337  git branch --delete marrip
+  338  git branch
+  339  git switch marrip
+  340  git switch marrips
+  341  git branch --delete marrip
+  342  git branch
+  343  git push github-demo --delete marrip
+  344  git branch -d marrip
+  345  git branch
+  346  git branch -d marrips
+  347  git branch -d marrips
+  348  git switch marrip
+  349  git branch -d marrips
+  350  git branch -d origin marrips
+  351  git branch -d origin marrip
+  352  git push --set-upstream origin marrips
+  353  git checkout -b marrip
+  354  git commit -m "initial changes"
+  355  git push --set-upstream origin marrip
+  356  git branch -d origin marrip
+  357  git branch -d origin marrip
+  358  git switch marrips
+  359  git branch -d origin marrip
+  360  git push --delete origin marrip
+  361  git checkout -b abhi
+  362  git commit -m "Initial changes done again"
+  363  git push --set-upstream origin abhi
+  364  git pull
+  365  git push --delete origin marrips
+  366  git switch main
+  367  git status
+  368  git switch abhi
+  369  git status
+  370  git switch main
+  371  git switch abhi
+  372  git status
+  373  git add humidity.CHANGE.pptx
+  374  git status
+  375  git commit -m "added new ppt"
+  376  git status
+  377  git push --set-upstream origin abhi
+  378  git status
+  379  git rm --cached python
+  380  ls
+  381  git rm --cached Python
+  382  ls
+  383  git rm --cached 'Python'
+  384  rm Python
+  385  rm tuple.txt
+  386  ls
+  387  git pull
+  388  git rm -r --cached Python
+  389  git rm -r --cached Python/
+  390  rm -r Python
+  391  ls
+  392  rm -r github-demo/
+  393  ls
+  394  ls
+  395  git switch main
+  396  git switch main
+  397  git checkout main
+  398  rm
+  399  ls
+  400  rm string.txt
+  401  ls
+  402  git checkout main
+  403  git status
+  404  git add codes.txt
+  405  git commit -m "latest code added"
+  406  git push
+  407  rm -r github-demo
+  408  cd ..
+  409  rm -r github-demo
+  410  cd github-demo
+  411  ls
+  412  git switch abhi
+  413  git checkout abhi
+  414  git checkout abhi
+  415  git branch
+  416  git switch abhi
+  417  ls
+  418  cd github-demo
+  419  ls
+  420  git switch abhi
+  421  git checkout abhi
+  422  git branch
+  423  git switch main
+  424  git switch master
+  425  git chechout-b abhi
+  426  git chechout -b abhi
+  427  git checkout -b abhi
+  428  git push --delete origin marrips
+  429  git branch
+  430  git push --delete origin marrips
+  431  git branch
+  432  rm -r marrips
+  433  git checkout -b marrips
+  434  git checkout -b marrip
+  435  git init
+  436  git commit -m "new branch created"
+  437  git status
+  438  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  439  git branch
+  440  git status
+  441  git init
+  442  git status
+  443  git add List.txt
+  444  git branch
+  445  git switch marrips
+  446  git status
+  447  git branch
+  448  git commit -m "new branch created"
+  449  git push --set-upstream origin marrips
+  450  git push --set-upstream marrips
+  451  git pull
+  452  git push --set-upstream origin marrips
+  453  git switch abhi
+  454  git checkout abhi
+  455  git stash
+  456  git checkout abhi
+  457  git stash
+  458  git checkout abhi
+  459  git status
+  460  git commit -m "latest changes"
+  461  git push --set-upstream origin marrips
+  462  history
+  463  git status
+  464  git commit -m "New file added"
+  465  git status
+  466  git push --set-upstream origin sasidhar
+  467  git push --set-upstream origin master
+  468  git push --set-upstream origin sasidhar
+  469  git push origin main
+  470  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  471  git push --set-upstream origin sasidhar
+  472  git push origin main
+  473  history
+  474  git push --set-upstream origin sasidhar
+  475  git remote -v
+  476  git remote add origin https://github.com/MarripatiSasidhar/github-demo.git
+  477  git push --set-upstream origin sasidhar
+  478  git status
+  479  git branch
+  480  git push --set-upstream origin abhi
+  481  git branch
+  482  git checkout abhi
+  483  git switch abhi
+  484  git clone https://github.com/MarripatiSasidhar/github-demo.git
+  485  git switch main
+  486  git switch master
+  487  git switch origin
+  488  git checkout -b sasi
+  489  echo "Hi, this is a testing file to push in branch sasi..!" >>testingfile.txt
+  490  git status
+  491  git add testingfile.txt
+  492  git commit -m "Intitial changes done"
+  493  git status
+  494  git branch
+  495  git push --set-upstream origin sasi
+  496  git branch
+  497  git status
+  498  git switch sasidhar
+  499  git switch abhi
+  500  git remote -v
+  501  git switch abhi
+  502  git fetch
+  503  git switch abhi
+  504  git branch
+  505  ls .git/refs/heads/
+  506  git switch --track origin/abhi
+  507  git switch --track abhi
+  508  git switch --track origin/sasi
+  509  git fetch -all
+  510  git fetch --all
+  511  git branch
+  512  ll
+  513  cd github-demo/
+  514  LL
+  515  ll
+  516  git branch
+  517  cd ..
+  518  ll
+  519  git branch
+  520  git branch
+  521  git fetch --all
+  522  git branch
+  523  git checkout test
+  524  git branch
+  525  git checkout -b sample
+  526  git branch
+  527  git push origin sample
+  528  git branch -d abhi
+  529  git branch -d test
+  530  git branch
+  531  git checkout sasi
+  532  git branch -d sample
+  533  git branch -D sample
+  534  git branch -D sample
+  535  git branch
+  536  ll
+  537  git remote -v
+  538  ll
+  539  ls-lrt
+  540  ll
+  541  git rm basic.txt
+  542  ll
+  543* git add .'
+  544  git commit -m "deleted-basic.txt"
+  545  git push origin sasi
+  546  ls -a
+  547  ls-lrt
+  548  ls -lrt
+  549  ll
+  550  git merge
+  551  echo "test file" >>sample.txt
+  552  git status
+  553  git commit -m "latest sample file added"
+  554  git merge
+  555  git push origin sasi
+  556  git push --set-upstream origin sasi
+  557  git status
+  558  git add.*
+  559  git add .
+  560  git status
+  561  echo "Check file" >>sample1.txt
+  562  git status
+  563  echo "Check file one more" >>sample2.txt
+  564  git status
+  565  git add .
+  566  git status
+  567  git commit -m "New files sample1 and sample2 added"
+  568  git merge
+  569  git push origin sasi
+  570  git status
+  571  ll
+  572  cd github-demo/
+  573  ll
+  574  git switch sasi
+  575  git checkout sasi
+  576  cd ..
+  577  git switch sasi
+  578  git config --global core.autocrlf
+  579  git remote show origin
+  580  git checkout main
+  581  git checkout master
+  582  git checkout sasi
+  583  git checkout master
+  584  git checkout main
+  585  git checkout sasi
+  586  git switch $(git remote show origin | grep 'HEAD branch' | awk '{print $NF}')
+  587  git rebase
+  588  git merge
+  589  git checkout sasi
+  590  git merge main
+  591  git merge sasi main
+  592  git checkout main
+  593  git merge sasi main
+  594  git merge sasi
+  595  git rebase sasi
+  596  git log --oneline
+  597  git merge sasidhar
+  598  git checkout sasi
+  599  touch 2.txt
+  600  git status
+  601  cat 2.txt
+  602  echo "New content added" >>2.txt
+  603  cat 2.txt
+  604  git status
+  605  git commit -m "New file created in sasi branch"
+  606  git add .
+  607  git commit -m "New file created in sasi branch"
+  608  git log --oneline
+  609  git checkout main
+  610  git merge sasi
+  611  git log --oneline
+  612  git switch sasi
+  613  touch 1.doc
+  614  git status
+  615  cat 1.doc
+  616  echo "I am a empty microsoft-document" >>1.doc
+  617  cat 1.doc
+  618  cat 1.doc
+  619  git status
+  620  git add .
+  621  git commit -m "added a new empty microsoft document"
+  622  git checkout sasi
+  623  git checkout main
+  624  git rebase sasi
+  625  git status
+  626  git log --oneline
+  627  ls
+  628  git checkout sasi
+  629  ls
+  630  git branch
+  631  git branch -m "manoj"
+  632  git branch
+  633  git checkout main
+  634  git branch -m "manoj1"
+  635  git branch
+  636  git branch
+  637  git branch manoj2
+  638  git branch
+  639  git add
+  640  history
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ git branch
+  manoj
+* manoj1
+  manoj2
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ git fetch
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ git branch
+  manoj
+* manoj1
+  manoj2
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ git fetch all
+fatal: 'all' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ ^C
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ git remote -v
+origin  https://github.com/MarripatiSasidhar/github-demo.git (fetch)
+origin  https://github.com/MarripatiSasidhar/github-demo.git (push)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ git branch
+  manoj
+* manoj1
+  manoj2
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (manoj1)
+$ git branch -m "main"
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git branch
+* main
+  manoj
+  manoj2
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git remote -v
+origin  https://github.com/MarripatiSasidhar/github-demo.git (fetch)
+origin  https://github.com/MarripatiSasidhar/github-demo.git (push)
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$ git branch
+* main
+  manoj
+  manoj2
+  sasidhar
+
+lenovo@DESKTOP-7604S8E MINGW64 ~/Desktop/GIT (main)
+$
